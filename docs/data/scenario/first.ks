@@ -1,46 +1,63 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="ひようらでラーメンを食べよう！"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「ひようらでラーメン屋を食べよう！」[l][r]
 
-メロスは激怒した。[l][r]
+慶くんは春から日吉キャンパスに通う慶應生。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+慶くん「昼ごはんはひようらでラーメンを食べよう！」[l][r]
 
-(中略)[l][r]
+(日吉駅に着いた慶くん)[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+ひようらには普通部通り、中央通り、浜銀通りの3つの通りがある。[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+慶くんをどの通りに行かせよう？[1][r]
+
+[link target=*tag_hutuubu] →「普通部通り」 [endlink][r]
+[link target=*tag_tyuuou] →「中央通り」 [endlink][r]
+[link target=*tag_hamagin] →「浜銀通り」 [endlink][r]
 [s]
 
-*tag_sleep
+*tag_hutuubu
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=hutuubu.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+銀家　日吉本店　に着いた![l][r]
+慶くんは家系ラーメンの油にやられて気持ち悪くなってしまった...[r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
-
-[bg storage=run.jpg time=500]
+*tag_tyuuou
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
 
-【 GOOD END 】[l][cm]
+[bg storage=tyuuou.jpg time=500]
+
+らすた　に着いた！[l][r]
+あまりの油の多さに慶くんは吐いてしまった！[r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_hamagin
+
+[cm]
+
+[bg storage=hamagin.jpg time=500]
+
+はまとら　に着いた！
+濃厚な魚介スープに中太麺が絡む！[1][r]
+慶くんは大満足して完食した！[r]
+
+【GOOD END】[1][cm]
 
 [jump target=*start]
